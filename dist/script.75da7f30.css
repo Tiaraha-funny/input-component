@@ -1,19 +1,69 @@
 .input {
-  border: 1px solid #828282;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 16px;
 }
 
-.input:hover {
+.input__label:hover {
   border: 1px solid #333333;
-  box-sizing: border-box;
-  border-radius: 8px;
 }
-.input:focus {
+
+.blue:hover {
+  color: #2962FF;
+}
+
+.input__label:focus {
   border: 1px solid #2962FF;
-  box-sizing: border-box;
-  border-radius: 8px;
+  border-color: #2962FF 1px solid;
+  -webkit-box-shadow: none;
 }
+
+.error {
+  color: #D32F2F;
+}
+.error:hover {
+  color: #333333;
+}
+
+.input__error {
+  border: 1px solid #D32F2F;
+}
+
+label.input__error {
+  border: none;
+}
+.input__error:hover {
+  border: 1px solid #333333;
+}
+.input__error:focus {
+  border: 1px solid #D32F2F;
+}
+
+.input__disabled {
+  background: #F2F2F2;
+  border: 1px solid #E0E0E0;
+}
+label.input__disabled {
+  border: none;
+  background: none;
+}
+
+.input__interestingText {
+  border: 1px solid #D32F2F;
+  color: #D32F2F;
+}
+label.input__interestingText {
+  border: none;
+}
+.startIcon::before {
+  content: url("/iconPhone.6a35c1fe.svg");
+  display: block;
+  width: 100%;
+  background-color: #2962FF;
+}
+.endIcon::after {
+  content: url("/padlock.643e1075.svg");
+}
+
 
 /*# sourceMappingURL=/script.75da7f30.css.map */
