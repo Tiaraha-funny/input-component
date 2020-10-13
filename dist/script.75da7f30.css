@@ -1,0 +1,19 @@
+.input {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.input:hover {
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.input:focus {
+  border: 1px solid #2962FF;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=/script.75da7f30.css.map */
