@@ -45,7 +45,7 @@ function Input(props) {
           type="text"
           placeholder={placeholder}
           className={classes}
-          disabled={props.text === "disabled" ? "disabled" : ""}
+          disabled={props.text === "disabled" ? "disabled" : ""} 
         />
         <i>{props.startIcon ? <Icon name={props.startIcon} /> : ''}</i>
         <i>{props.endIcon ? <Icon name={props.endIcon} align="right" /> : ''}</i><br/>

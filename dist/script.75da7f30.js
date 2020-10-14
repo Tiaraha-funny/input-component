@@ -28528,7 +28528,7 @@ var InputApp = /*#__PURE__*/function (_React$Component) {
         text: "label"
       }, "Label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input error/>"), /*#__PURE__*/_react.default.createElement(_Input.default, {
         label: "error",
-        text: "error"
+        error: "error"
       }, "Label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input disabled />"), /*#__PURE__*/_react.default.createElement(_Input.default, {
         label: "disabled",
         text: "disabled"
