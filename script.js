@@ -16,11 +16,11 @@ class InputApp extends React.Component {
           </div>
           <div>
             <p>{`<Input error/>`}</p>
-            <Input label="placeholder" text="error">Label</Input>
+            <Input label="error" text="error">Label</Input>
           </div>
           <div>
             <p>{`<Input disabled />`}</p>
-            <Input label="placeholder" text="disabled" >Label</Input>
+            <Input label="disabled" text="disabled" >Label</Input>
           </div>
           <div className="textInt">
             <div>
@@ -30,7 +30,6 @@ class InputApp extends React.Component {
             <div>
               <p>{`<Input helperText="Some interesting text error />`}</p>
               <Input label="placeholder" text="interestingText">Some interesting text</Input>
-              {/* <p style={{color:"#D32F2F"}}>{`Some interesting text`}</p> */}
             </div>
           </div>
           <div className="icons">

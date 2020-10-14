@@ -28422,7 +28422,12 @@ function Input(props) {
   var label = props.children;
   var placeholder = props.label;
   var classes = props.text ? "input input__".concat(props.text) : "input";
-  var classLabel = props.text === "error" ? "error" : "blue";
+  var classLabel = props.text === "error" ? "error" : "blue"; // if(props.label === "icon start") {
+  //   label = `${props.startIcon ? <Icon name={props.startIcon} /> : ''} start icon`
+  // }
+  // if(props.label === "icon end") {
+  //   label = `${props.endIcon ? <Icon name={props.endIcon} align="right" /> : ''} end icon`
+  // }
 
   if (props.disabled) {
     classes = "".concat(classes, " input__").concat(props.disabled);
@@ -28456,7 +28461,7 @@ function Input(props) {
     type: "text",
     placeholder: placeholder,
     className: classes,
-    disabled: props.disabled ? "disabled" : ""
+    disabled: props.text === "disabled" ? "disabled" : ""
   }), /*#__PURE__*/_react.default.createElement("i", null, props.startIcon ? /*#__PURE__*/_react.default.createElement(_icons.default, {
     name: props.startIcon
   }) : ''), /*#__PURE__*/_react.default.createElement("i", null, props.endIcon ? /*#__PURE__*/_react.default.createElement(_icons.default, {
@@ -28522,10 +28527,10 @@ var InputApp = /*#__PURE__*/function (_React$Component) {
         label: "placeholder",
         text: "label"
       }, "Label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input error/>"), /*#__PURE__*/_react.default.createElement(_Input.default, {
-        label: "placeholder",
+        label: "error",
         text: "error"
       }, "Label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input disabled />"), /*#__PURE__*/_react.default.createElement(_Input.default, {
-        label: "placeholder",
+        label: "disabled",
         text: "disabled"
       }, "Label")), /*#__PURE__*/_react.default.createElement("div", {
         className: "textInt"
@@ -28596,7 +28601,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63446" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60644" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
