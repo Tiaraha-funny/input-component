@@ -25,11 +25,11 @@ class InputApp extends React.Component {
           <div className="textInt">
             <div>
               <p>{`<Input helperText="Some interesting text />`}</p>
-              <Input label="placeholder" text="interesting">Some interesting text</Input>
+              <Input label="placeholder" text="interesting">Label</Input>
             </div>
             <div>
               <p>{`<Input helperText="Some interesting text error />`}</p>
-              <Input label="placeholder" text="interestingText">Some interesting text</Input>
+              <Input label="placeholder" text="interestingText">Label</Input>
             </div>
           </div>
           <div className="icons">

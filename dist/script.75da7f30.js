@@ -28537,10 +28537,10 @@ var InputApp = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input helperText=\"Some interesting text />"), /*#__PURE__*/_react.default.createElement(_Input.default, {
         label: "placeholder",
         text: "interesting"
-      }, "Some interesting text")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input helperText=\"Some interesting text error />"), /*#__PURE__*/_react.default.createElement(_Input.default, {
+      }, "Label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input helperText=\"Some interesting text error />"), /*#__PURE__*/_react.default.createElement(_Input.default, {
         label: "placeholder",
         text: "interestingText"
-      }, "Some interesting text"))), /*#__PURE__*/_react.default.createElement("div", {
+      }, "Label"))), /*#__PURE__*/_react.default.createElement("div", {
         className: "icons"
       }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input startIcon />"), /*#__PURE__*/_react.default.createElement(_Input.default, {
         label: "icon start",
