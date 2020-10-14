@@ -26,10 +26,7 @@ input.input__label:hover {
   border: 1px solid #333333;
 }
 
-label.input__label:hover {
-  color: #2962FF;
-}
-label.input__label:focus {
+label.input__label:focus-within {
   color: #2962FF;
 }
 
@@ -53,7 +50,7 @@ label.input__error:hover {
   color: #333333;
 }
 
-label.input__error:focus {
+label.input__error:focus-within {
   color: #D32F2F;
 }
 

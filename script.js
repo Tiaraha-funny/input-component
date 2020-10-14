@@ -16,7 +16,7 @@ class InputApp extends React.Component {
           </div>
           <div>
             <p>{`<Input error/>`}</p>
-            <Input label="error" error="error">Label</Input>
+            <Input label="error" text="error">Label</Input>
           </div>
           <div>
             <p>{`<Input disabled />`}</p>
