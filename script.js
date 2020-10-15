@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Input from "./Input";
+import TextArea from "./TextArea";
 
 class InputApp extends React.Component {
   render() {
@@ -62,7 +63,7 @@ class InputApp extends React.Component {
           </div>
           <div>
             <p>{`<Input multiline row="4" />`}</p>
-            <Input label="multiline" row="4">Label</Input>
+            <TextArea label="multiline" row="4">Label</TextArea>
           </div>
         </form>
       </main>

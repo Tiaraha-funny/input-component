@@ -8,16 +8,6 @@ function Input(props) {
   let classes = props.text ? `input input__${props.text}` : "input";
   let classLabel = props.text === "error" ? "error" : "blue";
 
-
-  // if(props.label === "icon start") {
-  //   label = `${props.startIcon ? <Icon name={props.startIcon} /> : ''} start icon`
-  // }
-  
-  // if(props.label === "icon end") {
-  //   label = `${props.endIcon ? <Icon name={props.endIcon} align="right" /> : ''} end icon`
-  // }
-
-
   if (props.disabled) {
 		classes = `${classes} input__${props.disabled}`;
   }

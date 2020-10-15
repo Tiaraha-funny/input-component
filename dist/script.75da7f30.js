@@ -28422,12 +28422,7 @@ function Input(props) {
   var label = props.children;
   var placeholder = props.label;
   var classes = props.text ? "input input__".concat(props.text) : "input";
-  var classLabel = props.text === "error" ? "error" : "blue"; // if(props.label === "icon start") {
-  //   label = `${props.startIcon ? <Icon name={props.startIcon} /> : ''} start icon`
-  // }
-  // if(props.label === "icon end") {
-  //   label = `${props.endIcon ? <Icon name={props.endIcon} align="right" /> : ''} end icon`
-  // }
+  var classLabel = props.text === "error" ? "error" : "blue";
 
   if (props.disabled) {
     classes = "".concat(classes, " input__").concat(props.disabled);
@@ -28476,7 +28471,33 @@ function Input(props) {
 
 var _default = Input;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./index.css":"index.css","./icons":"icons.js"}],"script.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./index.css":"index.css","./icons":"icons.js"}],"TextArea.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+require("./index.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function TextArea(props) {
+  var classes = props.text ? "input input__".concat(props.text) : "input";
+  var placeholder = props.label || props.children;
+  return /*#__PURE__*/_react.default.createElement("textarea", {
+    type: "text",
+    placeholder: placeholder,
+    className: classes
+  });
+}
+
+var _default = TextArea;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./index.css":"index.css"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28484,6 +28505,8 @@ var _react = _interopRequireDefault(require("react"));
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _Input = _interopRequireDefault(require("./Input"));
+
+var _TextArea = _interopRequireDefault(require("./TextArea"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28562,7 +28585,7 @@ var InputApp = /*#__PURE__*/function (_React$Component) {
       }, "Label"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input fullWidth/>"), /*#__PURE__*/_react.default.createElement(_Input.default, {
         label: "width",
         size: "fullwidth"
-      }, "Label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input multiline row=\"4\" />"), /*#__PURE__*/_react.default.createElement(_Input.default, {
+      }, "Label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "<Input multiline row=\"4\" />"), /*#__PURE__*/_react.default.createElement(_TextArea.default, {
         label: "multiline",
         row: "4"
       }, "Label"))));
@@ -28573,7 +28596,7 @@ var InputApp = /*#__PURE__*/function (_React$Component) {
 }(_react.default.Component);
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(InputApp, null), document.getElementById("root"));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Input":"Input.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Input":"Input.js","./TextArea":"TextArea.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28601,7 +28624,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60644" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60484" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
