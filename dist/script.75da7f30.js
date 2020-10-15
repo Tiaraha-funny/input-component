@@ -28285,7 +28285,52 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/iconPhone.svg":[function(require,module,exports) {
+module.exports = "/iconPhone.4bdf788f.svg";
+},{}],"images/padlock.svg":[function(require,module,exports) {
+module.exports = "/padlock.313cfdb6.svg";
+},{}],"icons.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _iconPhone = _interopRequireDefault(require("./images/iconPhone.svg"));
+
+var _padlock = _interopRequireDefault(require("./images/padlock.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Icon(props) {
+  var icon;
+  var style = props.align === "right" ? "icon--right" : null;
+
+  switch (props.name) {
+    case "contact":
+      icon = /*#__PURE__*/_react.default.createElement("img", {
+        src: _iconPhone.default,
+        className: style
+      });
+      break;
+
+    case 'padlock':
+      icon = /*#__PURE__*/_react.default.createElement("img", {
+        src: _padlock.default,
+        className: style
+      });
+      break;
+  }
+
+  return icon;
+}
+
+var _default = Icon;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./images/iconPhone.svg":"images/iconPhone.svg","./images/padlock.svg":"images/padlock.svg"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28352,16 +28397,22 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"index.css":[function(require,module,exports) {
+},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/default.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/iconPhone.svg":[function(require,module,exports) {
-module.exports = "/iconPhone.4bdf788f.svg";
-},{}],"images/padlock.svg":[function(require,module,exports) {
-module.exports = "/padlock.313cfdb6.svg";
-},{}],"icons.js":[function(require,module,exports) {
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"css/input.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./css/default.css":"css/default.css","./css/input.css":"css/input.css","_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Input.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28370,51 +28421,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
-
-var _iconPhone = _interopRequireDefault(require("./images/iconPhone.svg"));
-
-var _padlock = _interopRequireDefault(require("./images/padlock.svg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Icon(props) {
-  var icon;
-  var style = props.align === "right" ? "icon--right" : null;
-
-  switch (props.name) {
-    case "contact":
-      icon = /*#__PURE__*/_react.default.createElement("img", {
-        src: _iconPhone.default,
-        className: style
-      });
-      break;
-
-    case 'padlock':
-      icon = /*#__PURE__*/_react.default.createElement("img", {
-        src: _padlock.default,
-        className: style
-      });
-      break;
-  }
-
-  return icon;
-}
-
-var _default = Icon;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","./images/iconPhone.svg":"images/iconPhone.svg","./images/padlock.svg":"images/padlock.svg"}],"Input.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-require("./index.css");
 
 var _icons = _interopRequireDefault(require("./icons"));
+
+require("./index.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28471,7 +28481,7 @@ function Input(props) {
 
 var _default = Input;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./index.css":"index.css","./icons":"icons.js"}],"TextArea.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./icons":"icons.js","./index.css":"index.css"}],"TextArea.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28624,7 +28634,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60484" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52869" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

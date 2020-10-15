@@ -1,0 +1,21 @@
+main {
+    background-color: #fec7d7;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  form {
+    padding: 1rem;
+    background-color: #d9d4e7;
+  }
+
+textarea {
+    height: 150px;
+  }

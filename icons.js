@@ -1,6 +1,6 @@
 import React from "react";
 import contactIcon from "./images/iconPhone.svg";
-import padlockIcon from "./images/padlock.svg"
+import padlockIcon from "./images/padlock.svg";
 
 function Icon(props) {
   let icon;

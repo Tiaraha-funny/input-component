@@ -1,6 +1,6 @@
 import React from "react";
-import "./index.css";
 import Icon from "./icons";
+import "./index.css";
 
 function Input(props) {
   const label = props.children;
