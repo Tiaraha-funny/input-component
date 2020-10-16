@@ -20,7 +20,7 @@ In this project, I used class react in my script.js. It is not perfect, it still
 
 *I am feeling very happy if there is anyone can help me to improve my code*. 
 
-To get me in touch 
-[my company email me here](mailto:peta.jea@onja.org) and [my personal email is here](mailto:jeannie.petah@gmail.com)
+To get me in touch you can
+[email me here](mailto:peta.jea@onja.org) and [my personal email is here](mailto:jeannie.petah@gmail.com)
 
 **Thanks in advance !!**
