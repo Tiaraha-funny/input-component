@@ -20,6 +20,8 @@ In this project, I used class react in my script.js. It is not perfect, it still
 
 *I am feeling very happy if there is anyone can help me to improve my code*. 
 
+## Contact 
+
 To get me in touch you can
 [email me here](mailto:peta.jea@onja.org) and [my personal email is here](mailto:jeannie.petah@gmail.com)
 
